@@ -23,14 +23,19 @@
         android:theme="@style/Theme.Mymy"
         tools:targetApi="31">
         <activity
-            android:name=".Locked_app_list_activity"
-            android:exported="false">
+            android:name=".navigation_drawer_activity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".timeSlotSettingActivity"
+            android:name=".Locked_app_list_activity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
@@ -52,12 +57,8 @@
         </activity>
         <activity
             android:name=".logIn"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+            android:exported="false">
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
 
             <meta-data
                 android:name="android.app.lib_name"

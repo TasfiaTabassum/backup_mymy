@@ -1,9 +1,17 @@
 package com.example.mymy;
 
+
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 import androidx.cardview.widget.CardView;
+import androidx.core.view.GravityCompat;
+import androidx.drawerlayout.widget.DrawerLayout;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
 
 import android.app.AppOpsManager;
 import android.content.Context;
@@ -16,6 +24,7 @@ import android.os.Bundle;
 import android.provider.Settings;
 import android.text.InputType;
 import android.util.Log;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
@@ -25,12 +34,16 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.android.material.navigation.NavigationView;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
+
+
 public class MainActivity<noHistory, name, label, excludeFromRecents, activity> extends AppCompatActivity {
 
-    private CardView AppSetting,AppUsagePermission,SetUpPrivacy,TimeSlotSetting , SetUpdatePin , ShowLockedApps ;
+    private CardView AppSetting,AppUsagePermission,SetUpPrivacy, SetUpdatePin , ShowLockedApps ;
+    // TimeSlotSetting ,
     Button btnapplocker , btnapppermission , buttonprofile , btntimeslotsetting;
     Button signOut;
 
@@ -42,14 +55,13 @@ public class MainActivity<noHistory, name, label, excludeFromRecents, activity> 
 
 
 
-
     Animation a1, a2 , a3 , a4 , a5 , a6 ;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.fragment_d);
 
         password = SharedPrefUtil.getInstance(this).getString(KEY);
         final Context context = this ;
@@ -57,7 +69,7 @@ public class MainActivity<noHistory, name, label, excludeFromRecents, activity> 
         AppSetting = findViewById(R.id.setting_cardview);
         AppUsagePermission = findViewById(R.id.App_usage_permission);
         SetUpPrivacy = findViewById(R.id.set_up_privacy);
-        TimeSlotSetting = findViewById(R.id.time_slot_setting);
+       // TimeSlotSetting = findViewById(R.id.time_slot_setting);
         signOut = findViewById(R.id.sign_out_btn);
         ShowLockedApps = findViewById(R.id.showLockedApps_cardview);
         SetUpdatePin = findViewById(R.id.setPin_cardview);
@@ -76,7 +88,7 @@ public class MainActivity<noHistory, name, label, excludeFromRecents, activity> 
         AppUsagePermission.setAnimation(a3);
         SetUpPrivacy.setAnimation(a3);
         SetUpdatePin.setAnimation(a1);
-        TimeSlotSetting.setAnimation(a1);
+       // TimeSlotSetting.setAnimation(a1);
         ShowLockedApps.setAnimation(a3);
 
 
@@ -122,13 +134,13 @@ public class MainActivity<noHistory, name, label, excludeFromRecents, activity> 
 
 
 
-        TimeSlotSetting.setOnClickListener(new View.OnClickListener() {
+       /* TimeSlotSetting.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this,timeSlotSettingActivity.class);
                 startActivity(intent);
             }
-        });
+        });*/
 
         signOut.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -201,7 +213,10 @@ public class MainActivity<noHistory, name, label, excludeFromRecents, activity> 
 
 
 
+
+
     }
+
 
 
 

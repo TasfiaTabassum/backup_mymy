@@ -1,14 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".timeSlotSettingActivity"
-    android:gravity="center"
-    android:background="@drawable/bg"
-    >
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".BFragment">
 
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BFragment"
+    android:gravity="center"
+    android:background="@drawable/bg2"
+    >
 
     <ImageView
         android:id="@+id/time_setting_exclaimation_mark"
@@ -21,13 +27,12 @@
         />
 
     <pl.droidsonroids.gif.GifImageView
-    android:layout_width="350dp"
-    android:layout_height="400dp"
-    android:src="@drawable/project_time_setting"
+        android:layout_width="350dp"
+        android:layout_height="400dp"
+        android:src="@drawable/project_time_setting"
 
-    />
-
-
-
+        />
 
 </RelativeLayout>
+
+</FrameLayout>

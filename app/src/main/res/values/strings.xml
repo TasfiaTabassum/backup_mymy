@@ -7,9 +7,29 @@
     <string name="option4"> Time Slot setting </string>
     <string name="option5"> Sign Out </string>
     <string name="password">Password</string>
-    <string name ="preference_file_key">SharedPreferenceFileKey</string>
-    <string name ="keyName">SharedPreferenceFileKey</string>
-    <string name ="id">SharedPreferenceFileKey</string>
+    <string name="preference_file_key">SharedPreferenceFileKey</string>
+    <string name="keyName">SharedPreferenceFileKey</string>
+    <string name="id">SharedPreferenceFileKey</string>
+    <string name="title_activity_navigation_drawer">navigation_drawer</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="OpenDrawer">Open navigation drawer</string>
+    <string name="CloseDrawer">Close navigation drawer</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="linktogitrepository">
+        <c href="https://github.com/TasfiaTabassum/backup_mymy"> -> Link to our git repository !</c>
+    </string>
+
+    <string name="linktodemovideo">
+        <c href="https://github.com/TasfiaTabassum/backup_mymy"> -> Link to our demo video !</c>
+    </string>
 
 
 </resources>

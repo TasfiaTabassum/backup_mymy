@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bg"
+    android:background="@drawable/bg2"
     tools:context=".logIn">
 
     <TextView
@@ -18,7 +18,7 @@
         android:layout_marginBottom="50dp"
         android:gravity="center"
         android:text="Sign In"
-        android:textColor="@color/white"
+        android:textColor="@color/dark_purple_pink"
         android:textSize="35dp"
         android:textStyle="bold" />
 
@@ -32,12 +32,13 @@
         android:layout_marginEnd="10dp"
         android:layout_marginBottom="10dp"
         android:drawableLeft="@drawable/ic_baseline_person_24"
+
         android:drawablePadding="20dp"
         android:hint="Email"
         android:paddingHorizontal="20dp"
         app:endIconMode="clear_text"
-        android:textColor="@color/white"
-        android:textColorHint="@color/white"
+        android:textColor="@color/dark_purple_pink"
+        android:textColorHint="@color/dark_purple_pink"
         android:textSize="18dp">
 
         <com.google.android.material.textfield.TextInputEditText
@@ -63,8 +64,8 @@
         android:inputType="textPassword"
         android:paddingHorizontal="20dp"
         app:endIconMode="password_toggle"
-        android:textColor="@color/white"
-        android:textColorHint="@color/white"
+        android:textColor="@color/dark_purple_pink"
+        android:textColorHint="@color/dark_purple_pink"
         android:textSize="18dp">
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
@@ -84,7 +85,7 @@
         android:layout_marginBottom="20dp"
         android:onClick="goMainActivity"
         android:text="LOGIN"
-        android:backgroundTint="@color/bright_purple_pink"
+        android:backgroundTint="@color/dark_purple_pink"
         />
 
     <TextView
@@ -100,7 +101,7 @@
         android:minHeight="48dp"
         android:onClick="goForgotPassword"
         android:text="Forgot password?"
-        android:textColor="@color/white" />
+        android:textColor="@color/dark_purple_pink" />
 
 
 
@@ -119,8 +120,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Don't have an account?"
-            android:textColor="@color/white"
+            android:textColor="@color/dark_purple_pink"
             android:layout_marginLeft="80dp"
+
             />
 
         <TextView

@@ -42,11 +42,11 @@ public class profile_setting extends AppCompatActivity {
 //        password = SharedPrefUtil.getInstance(this).getString(KEY);
 //        final Context context = this ;
 
-        // calling the action bar
+        /*// calling the action bar
         ActionBar actionBar = getSupportActionBar();
 
         // showing the back button in action bar
-        actionBar.setDisplayHomeAsUpEnabled(true);
+        actionBar.setDisplayHomeAsUpEnabled(true);*/
 
 
         account_setting_cardview = findViewById(R.id.account_setting_cardview);
@@ -127,7 +127,7 @@ public class profile_setting extends AppCompatActivity {
 
     // this event will enable the back
     // function to the button on press
-    @Override
+   /* @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         switch (item.getItemId()) {
             case android.R.id.home:
@@ -135,7 +135,7 @@ public class profile_setting extends AppCompatActivity {
                 return true;
         }
         return super.onOptionsItemSelected(item);
-    }
+    }*/
 
 
 }
