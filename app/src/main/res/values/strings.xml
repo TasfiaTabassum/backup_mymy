@@ -20,8 +20,6 @@
 
     <string name="OpenDrawer">Open navigation drawer</string>
     <string name="CloseDrawer">Close navigation drawer</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
 
     <string name="linktogitrepository">
         <c href="https://github.com/TasfiaTabassum/backup_mymy"> -> Link to our git repository !</c>

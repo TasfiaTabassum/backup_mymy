@@ -54,14 +54,13 @@ public class MainActivity<noHistory, name, label, excludeFromRecents, activity> 
     private SharedPrefUtil pref ;
 
 
-
     Animation a1, a2 , a3 , a4 , a5 , a6 ;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.fragment_d);
+        setContentView(R.layout.main_navigation_drawer);
 
         password = SharedPrefUtil.getInstance(this).getString(KEY);
         final Context context = this ;
@@ -213,9 +212,11 @@ public class MainActivity<noHistory, name, label, excludeFromRecents, activity> 
 
 
 
-
-
     }
+
+
+
+
 
 
 
