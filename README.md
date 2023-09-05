@@ -6,17 +6,24 @@ Mymy is a lightweight Android app that enables users to apply a lock on apps on 
 
 # Features :
 -A user can create a profile in our app.
+
 -User can set a pin here to lock selected apps. This pin will be asked before entering the apps which was locked previously by the user to make sure of the privacy of the user.
+
 -The apps of the user account will be stored in the firebase. As a result, later if the user logs in the profile from another device the app list can be seen from that device.
+
 -User can set an alarm within the app.
 
 
 # Tools, Technologies, and Frameworks Used
 
 -Android Studio
+
 -GitHub
+
 -FireBase
--FireStore       
+
+-FireStore  
+
 -Java: Older than almost all other technologies, Java is a well-known and preferred object-oriented programming language.
 
 
